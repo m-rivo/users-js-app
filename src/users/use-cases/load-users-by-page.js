@@ -8,5 +8,5 @@ export const loadUsersByPage = async (page = 1) => {
   const resp = await fetch(url);
   const data = await resp.json();
 
-  console.log(data);
+  console.log(data?.data);
 };
